@@ -13,8 +13,9 @@
     align-items: center;
     padding: 0 16px;
     font-family: sans-serif;
-    font-size: large;
+    font-size: 20px;
     border-bottom:solid;
+    border-top:solid;
     border-color: black;
 
 }
@@ -35,9 +36,10 @@
 
 .nav-links li a {
     color: white;
+    font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    padding: 16px;
+    padding: 20px;
     
 }
 
@@ -50,6 +52,19 @@
 .nav-toggle {
     display: none; /*pentru a nu afisa buttonul cand ecranul este suficient de mare*/
 }
+
+header {
+    background-image: url('../img/header_img.jpg');
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div {
+    font-size: 50px;
+}
+
 
 /*Afisajul pentru telefoane!*/
 @media (max-width: 576px) {
@@ -70,7 +85,7 @@
         flex-direction: column; /*afisare linkuri in coloana*/
         background-color: rgb(88, 86, 86);
         position: absolute;
-        top: 50px; /*pozitiile de unde sa inceapa afisarea*/
+        top: 250px; /*pozitiile de unde sa inceapa afisarea*/
         left: 0px;
         width: 100%;
         display: none; /*pentru ca implicit sa ascundem lista de linkuri, apare doar la apasare buton!!*/
