@@ -12,11 +12,16 @@ h1 {
 body {
     background-color: rgb(175, 245, 239);
 }
+.row-rp div img {
+    width: 500px;
+    height: 400px;
+}
 
 .recent-posts {
     align-items: center;
     justify-content: space-around;
 }
+/*
 .row-rp {
     display:flex;
     flex-direction: row;
@@ -26,19 +31,33 @@ body {
     margin-bottom: 30px;
     
 }
-.recent-posts h2 {
+*/
+/*self-arranging of boxes/items*/
+.row-rp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
     padding: 20px;
 }
 
+#description-section {
+    text-align: center;
+    font-size: large;
+    margin: 20px;
+    
+}
 
 
 @media (max-width: 800px) {
     
-    .row-rp {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
+    .row-rp div img {
+        width: 450px;
+        height: 350px;
     }
 }
